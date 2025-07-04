@@ -1,1 +1,0 @@
-Sitemap: https://jakubmeixner.github.io/academicpage/sitemap.xml
