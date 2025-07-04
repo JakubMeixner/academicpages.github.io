@@ -15,7 +15,6 @@ name: &name "Jakub Meixner"
 description: &description "Research Assistant in Theoretical Physics and Machine Learning"
 
 url: "https://jakubmeixner.github.io"
-baseurl: "/academicpage"
 
 repository               : "academicpages/academicpages.github.io"
 
