@@ -1,0 +1,39 @@
+.tile-win8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem;
+  border-radius: 4px;
+  min-height: 120px;
+  color: white;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #a41034; // Default Harvard Crimson
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    text-decoration: none;
+  }
+
+  h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.9);
+  }
+}
+
+.tile-crimson { background-color: #A51C30; }   // Harvard Crimson
+.tile-gold    { background-color: #D4AF37; }   // Golden tile
+.tile-indigo  { background-color: #4B0082; }   // Deep academic indigo
+.tile-black   { background-color: #222; }
+.tile-gray    { background-color: #444; }
+.tile-sandstone { background-color: #CDB79E; } // Optional for warmth

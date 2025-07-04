@@ -1,22 +1,17 @@
----
-layout: compress
----
-
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+<!DOCTYPE html>
+<html lang="{{ site.locale | default: 'en' }}">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
-
   <body>
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    {{ content }}
+    <main class="page__content" style="margin-top: 2rem;">
+      {{ content }}
+    </main>
 
     <div class="page__footer">
       <footer>
