@@ -5,6 +5,50 @@ permalink: /
 author_profile: false
 ---
 
+<!-- === CUSTOM TILE STYLES (WINDOWS 8 STYLE) === -->
+<style>
+.tile-win8 {
+  display: block;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 600;
+  height: 100%;
+}
+
+.tile-win8:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.tile-win8 h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tile-win8 p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.tile-crimson { background-color: #a20025; }
+.tile-indigo { background-color: #6a00ff; }
+.tile-gold { background-color: #eaa800; }
+.tile-black { background-color: #111111; }
+.tile-gray { background-color: #555555; }
+.tile-sandstone { background-color: #d2b48c; }
+
+.grid-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+</style>
+
 <!-- === CONTACT SECTION (TOP) === -->
 <section style="background-color: #f4f4f4; padding: 2.5rem 1.5rem; margin-top: 2rem;">
   <div style="max-width: 850px; margin: auto;">
@@ -36,8 +80,7 @@ author_profile: false
 <section style="background-color: #ffffff; padding: 3rem 1.5rem;">
   <div style="max-width: 1100px; margin: auto;">
     <h2 style="text-align: center; margin-bottom: 2rem;">About</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
-
+    <div class="grid-tiles">
       <a href="/cv/" class="tile-win8 tile-crimson">
         <h3>Current Roles</h3>
         <p>IF PAN & MagTop, Warsaw</p>
@@ -52,7 +95,6 @@ author_profile: false
         <h3>Background</h3>
         <p>IBM AI, Qiskit, PennyLane</p>
       </a>
-
     </div>
   </div>
 </section>
@@ -61,8 +103,7 @@ author_profile: false
 <section style="background-color: #f3f6fa; padding: 3rem 1.5rem;">
   <div style="max-width: 1100px; margin: auto;">
     <h2 style="text-align: center; margin-bottom: 2rem;">Research Areas</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem;">
-
+    <div class="grid-tiles">
       <a href="/research/" class="tile-win8 tile-crimson">
         <h3>MBE + DL</h3>
         <p>Surface phase detection</p>
@@ -82,7 +123,6 @@ author_profile: false
         <h3>Scientific Agents</h3>
         <p>LLMs + AutoGen pipelines</p>
       </a>
-
     </div>
   </div>
 </section>
@@ -91,8 +131,7 @@ author_profile: false
 <section style="padding: 3rem 1.5rem;">
   <div style="max-width: 1100px; margin: auto;">
     <h2 style="text-align: center; margin-bottom: 2rem;">Tools & Libraries</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem;">
-
+    <div class="grid-tiles">
       <a href="/tools/" class="tile-win8 tile-crimson">
         <h3>PyTorch</h3>
         <p>PINNs, U-Nets, Diffusions</p>
@@ -112,7 +151,6 @@ author_profile: false
         <h3>AutoGen</h3>
         <p>Multi-agent workflows</p>
       </a>
-
     </div>
   </div>
 </section>
