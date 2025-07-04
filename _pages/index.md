@@ -7,7 +7,7 @@ author_profile: false
 
 <!-- === STYLES === -->
 <style>
-/* === Background Animation === */
+/* Background Animation */
 .animated-bg {
   animation: gradientShift 20s ease infinite;
   background: linear-gradient(-45deg, #f4f4f4, #e5e5e5, #f4f4f4, #dcdcdc);
@@ -19,87 +19,75 @@ author_profile: false
   100% { background-position: 0% 50%; }
 }
 
-/* === Tiles (Harvard Style) === */
 .tile-win8 {
   display: block;
   padding: 1.25rem;
   text-align: center;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   font-weight: 600;
   height: 100%;
   color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 .tile-win8:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
-.tile-win8 h3,
-.tile-win8 p {
+.tile-win8 h3, .tile-win8 p {
   color: white;
   margin: 0.5rem 0;
 }
+
 .grid-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1.5rem;
 }
 
-/* === Color themes === */
 .tile-about    { background-color: #722f37; }
-.tile-research { background-color: #222222; }
-.tile-tools    { background-color: #5a5a5a; }
+.tile-research { background-color: #1b1b1b; }
+.tile-tools    { background-color: #444; }
+.tile-dev      { background-color: #004c99; }
 </style>
 
 <div class="animated-bg">
 
-<!-- === CONTACT SECTION WITH LOGOS === -->
-<section style="background-color: #f4f4f4; padding: 1rem 1rem 0.5rem 1.5rem; margin-top: 0rem;">
+<!-- CONTACT BAR -->
+<section style="background-color: #f4f4f4; padding: 1rem 1rem 0.5rem 1.5rem;">
   <div style="max-width: 850px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
     <strong style="margin-right: 1rem;">Contact:</strong>
-
-    <a href="mailto:kubameixner@gmail.com" style="display: flex; align-items: center; margin-right: 1rem; text-decoration: none; color: inherit;">
+    <a href="mailto:kubameixner@gmail.com" style="display: flex; align-items: center; margin-right: 1rem;">
       <img src="https://img.icons8.com/color/48/000000/gmail-new.png" alt="Gmail" style="width: 20px; margin-right: 0.5rem;">
       kubameixner@gmail.com
     </a>
-
-    <a href="https://github.com/JakubMeixner" target="_blank" style="display: flex; align-items: center; margin-right: 1rem; text-decoration: none; color: inherit;">
+    <a href="https://github.com/JakubMeixner" target="_blank" style="display: flex; align-items: center; margin-right: 1rem;">
       <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub" style="width: 20px; margin-right: 0.5rem;">
       GitHub
     </a>
-
-    <a href="https://linkedin.com/in/jmeixner" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+    <a href="https://linkedin.com/in/jmeixner" target="_blank" style="display: flex; align-items: center;">
       <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" style="width: 20px; margin-right: 0.5rem;">
       LinkedIn
     </a>
   </div>
 </section>
 
-
-
-
-<!-- === HERO SECTION WITH GOLDEN NEBULA VIDEO BACKGROUND === -->
+<!-- HERO SECTION -->
 <div style="position: relative; overflow: hidden; height: 580px; text-align: center;">
-
-  <!-- Background Video -->
-  <video autoplay muted loop playsinline style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
-    <source src="/assets/hero-bg.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline
+        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+    <source src="{{ '/assets/hero-fixed.mp4' | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
-  </video>
-
-  <!-- Semi-dark Overlay for Contrast -->
+    </video>
+    
   <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.35); z-index: 1;"></div>
-
-  <!-- Hero Content -->
   <div style="position: relative; z-index: 2; padding-top: 3rem; color: white;">
     <img src="/images/profile.jpg" alt="Jakub Meixner" style="border-radius: 50%; width: 180px; height: 180px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
     <h1 style="font-size: 2.5em; font-weight: 600; margin-top: 1rem;">Jakub Meixner</h1>
     <p style="font-size: 1.25em; max-width: 800px; margin: 1rem auto; color: #eee;">
-      Research Assistant in Theoretical Physics and Machine Learning<br>
-      Institute of Physics, Polish Academy of Sciences & MagTop
+      PhD candidate in Physics & AI<br>
+      ML for quantum materials · PDE modeling · Agentic tools for research
     </p>
     <div style="margin-top: 1rem;">
       <a href="/cv/" class="btn btn--primary" style="margin-right: 1rem;">View CV</a>
@@ -108,79 +96,147 @@ author_profile: false
   </div>
 </div>
 
-
-<!-- === ABOUT SECTION === -->
-<section style="background-color: #ffffff; padding: 0.2rem 0.2rem;">
+<!-- ABOUT -->
+<section style="background-color: #fff; padding: 1.5rem;">
   <div style="max-width: 1100px; margin: auto;">
-    <h2 style="text-align: center; margin-bottom: 0.5rem;">About</h2>
+    <h2 style="text-align: center;">About Me</h2>
     <div class="grid-tiles">
       <a href="/cv/" class="tile-win8 tile-about">
-        <h3>Current Roles</h3>
-        <p>IF PAN & MagTop, Warsaw</p>
+        <h3>Affiliations</h3>
+        <p>MagTop · IF PAN · IDEAS NCBR</p>
       </a>
       <a href="/research/" class="tile-win8 tile-about">
-        <h3>Focus</h3>
-        <p>ML for MBE & quantum materials</p>
+        <h3>Expertise</h3>
+        <p>Quantum materials · ML for PDEs · Scientific workflows</p>
       </a>
       <a href="/about/" class="tile-win8 tile-about">
-        <h3>Background</h3>
-        <p>IBM AI, Qiskit, PennyLane</p>
+        <h3>Highlights</h3>
+        <p>IEEE · ICCV · QLFuture Hackathon · GQE Workshop</p>
       </a>
     </div>
   </div>
 </section>
 
-<!-- === RESEARCH AREAS === -->
-<section style="background-color: #f3f6fa; padding: 0.2rem 0.2rem;">
+<!-- RESEARCH -->
+<section style="background-color: #f3f6fa; padding: 1.5rem;">
   <div style="max-width: 1100px; margin: auto;">
-    <h2 style="text-align: center; margin-bottom: 1rem;">Research Areas</h2>
+    <h2 style="text-align: center;">Research Areas</h2>
     <div class="grid-tiles">
       <a href="/research/" class="tile-win8 tile-research">
-        <h3>MBE + DL</h3>
-        <p>Surface phase detection</p>
+        <h3>ML for MBE</h3>
+        <p>Video data · RHEED analysis · Phase transitions</p>
       </a>
       <a href="/research/" class="tile-win8 tile-research">
-        <h3>Physics-Informed</h3>
-        <p>PINNs for PDEs</p>
+        <h3>Physics-Informed ML</h3>
+        <p>PINNs · Neural PDEs · Diffusions</p>
       </a>
       <a href="/quantum/" class="tile-win8 tile-research">
         <h3>Quantum Computing</h3>
-        <p>VQAs & AQFT modeling</p>
+        <p>QML · Qiskit · PennyLane · Quantum GANs</p>
       </a>
       <a href="/agents/" class="tile-win8 tile-research">
-        <h3>Scientific Agents</h3>
-        <p>LLMs + AutoGen pipelines</p>
+        <h3>Agentic Tools</h3>
+        <p>AutoGen · LangChain · RAG systems</p>
       </a>
     </div>
   </div>
 </section>
 
-<!-- === TOOLS & LIBRARIES === -->
-<section style="padding: 1rem 1rem;">
+<!-- TOOLS -->
+<section style="background-color: #fff; padding: 1.5rem;">
   <div style="max-width: 1100px; margin: auto;">
-    <h2 style="text-align: center; margin-bottom: 0.2rem;">Tools & Libraries</h2>
+    <h2 style="text-align: center;">Tools & Libraries</h2>
     <div class="grid-tiles">
       <a href="/tools/" class="tile-win8 tile-tools">
         <h3>PyTorch</h3>
-        <p>PINNs, U-Nets, Diffusions</p>
+        <p>Diffusions, PINNs, GNNs</p>
       </a>
       <a href="/tools/" class="tile-win8 tile-tools">
-        <h3>JAX</h3>
-        <p>Autodiff & vectorization</p>
+        <h3>TensorFlow & Keras</h3>
+        <p>Deep learning, AutoML, CNNs</p>
+      </a>
+      <a href="/tools/" class="tile-win8 tile-tools">
+        <h3>scikit-learn</h3>
+        <p>Classical ML, preprocessing, evaluation</p>
       </a>
       <a href="/tools/" class="tile-win8 tile-tools">
         <h3>LangChain</h3>
-        <p>RAG agents & chains</p>
+        <p>Agents, chains, RAG pipelines</p>
       </a>
       <a href="/tools/" class="tile-win8 tile-tools">
         <h3>AutoGen</h3>
-        <p>Multi-agent workflows</p>
+        <p>Multi-agent scientific assistants</p>
       </a>
     </div>
   </div>
 </section>
 
-<!-- === FOOTER === -->
+<!-- ML FLOW -->
+<section style="background-color: #f0f0f8; padding: 1.5rem;">
+  <div style="max-width: 1100px; margin: auto;">
+    <h2 style="text-align: center;">Machine Learning Flow</h2>
+    <div class="grid-tiles">
+      <a href="/projects/" class="tile-win8 tile-mlflow">
+        <h3>Data Acquisition</h3>
+        <p>CSV, video, sensor, RHEED images</p>
+      </a>
+      <a href="/projects/" class="tile-win8 tile-mlflow">
+        <h3>Preprocessing</h3>
+        <p>OpenCV, Pandas, augmentation, denoising</p>
+      </a>
+      <a href="/projects/" class="tile-win8 tile-mlflow">
+        <h3>Model Design</h3>
+        <p>PyTorch, Keras, PINNs, GNNs, Diffusions</p>
+      </a>
+      <a href="/projects/" class="tile-win8 tile-mlflow">
+        <h3>Training & Evaluation</h3>
+        <p>TensorBoard, cross-validation, hyperopt</p>
+      </a>
+      <a href="/projects/" class="tile-win8 tile-mlflow">
+        <h3>Deployment</h3>
+        <p>Streamlit, GitHub Pages, REST APIs</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+.tile-mlflow {
+  background-color: #1e2a38;
+}
+</style>
+
+
+<!-- PROGRAMMING SKILLS -->
+<section style="background-color: #f7f7f7; padding: 1.5rem;">
+  <div style="max-width: 1100px; margin: auto;">
+    <h2 style="text-align: center;">Programming Skills</h2>
+    <div class="grid-tiles">
+      <a href="/tools/" class="tile-win8 tile-dev">
+        <h3>Python</h3>
+        <p>PyTorch · NumPy · data science · simulations</p>
+      </a>
+      <a href="/tools/" class="tile-win8 tile-dev">
+        <h3>C++</h3>
+        <p>Numerical simulations · OpenMP · HPC</p>
+      </a>
+      <a href="/tools/" class="tile-win8 tile-dev">
+        <h3>Bash & Shell</h3>
+        <p>Automation · pipelines · Linux scripting</p>
+      </a>
+      <a href="/tools/" class="tile-win8 tile-dev">
+        <h3>Web</h3>
+        <p>HTML · CSS · JS · GitHub Pages</p>
+      </a>
+      <a href="/tools/" class="tile-win8 tile-dev">
+        <h3>LaTeX & Markdown</h3>
+        <p>Technical documents · Scientific writing</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer style="text-align: center; margin: 4rem auto 2rem auto; font-size: 0.9em; color: #666;">
   Designed and built using GitHub Pages and Jekyll · Last updated {{ site.time | date: "%B %Y" }}
 </footer>
