@@ -86,8 +86,8 @@ author_profile: false
     <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Jakub Meixner" style="border-radius: 50%; width: 180px; height: 180px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
     <h1 style="font-size: 2.5em; font-weight: 600; margin-top: 1rem;">Jakub Meixner</h1>
     <p style="font-size: 1.25em; max-width: 800px; margin: 1rem auto; color: #eee;">
-      PhD candidate in Physics & AI<br>
-      ML for quantum materials · PDE modeling · Agentic tools for research
+      PhD student in ML and Physics<br>
+      Quantum Machine Learning · ML for quantum materials · PDE modeling · Generative Modeling
     </p>
     <div style="margin-top: 1rem;">
       <a href="https://jakubmeixner.github.io/" class="btn btn--primary" style="margin-right: 1rem;" target="_blank">View CV</a>
