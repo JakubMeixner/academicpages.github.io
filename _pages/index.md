@@ -90,7 +90,7 @@ author_profile: false
       ML for quantum materials · PDE modeling · Agentic tools for research
     </p>
     <div style="margin-top: 1rem;">
-      <a href="/cv/" class="btn btn--primary" style="margin-right: 1rem;">View CV</a>
+      <a href="https://jakubmeixner.github.io/" class="btn btn--primary" style="margin-right: 1rem;" target="_blank">View CV</a>
       <a href="/portfolio/" class="btn">Explore Projects</a>
     </div>
   </div>
