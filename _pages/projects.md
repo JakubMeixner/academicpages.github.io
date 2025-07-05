@@ -1,10 +1,10 @@
 ---
 title: "Explore Projects"
-permalink: /projects/
 layout: collection
+permalink: /projects/
 collection: projects
 entries_layout: grid
 classes: wide
-author_profile: true
 ---
-Welcome to my project showcase. Click on a project to learn more.
+
+Browse selected research and engineering projects below.

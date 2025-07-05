@@ -91,7 +91,7 @@ author_profile: false
     </p>
     <div style="margin-top: 1rem;">
       <a href="https://jakubmeixner.github.io/" class="btn btn--primary" style="margin-right: 1rem;" target="_blank">View CV</a>
-      <a href="/portfolio/" class="btn">Explore Projects</a>
+      <a href="{{ '/projects/' | relative_url }}" class="btn">Explore Projects</a>
     </div>
   </div>
 </div>

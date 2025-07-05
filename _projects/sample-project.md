@@ -1,28 +1,22 @@
 ---
 title: "Sample Project"
-excerpt: "This is a brief overview of the sample project."
+excerpt: "A short summary of the sample project goes here."
 layout: single
+collection: projects
 permalink: /projects/sample-project/
-author_profile: false
-header:
-  overlay_image: /assets/images/project-placeholder.jpg
-  overlay_filter: 0.3
-  caption: "Project Preview"
 ---
 
-## Overview
+![Demo GIF](https://via.placeholder.com/600x300.gif)
 
-This project demonstrates something interesting.
-
-## Media
-
-![Demo GIF](/assets/images/demo.gif)
-
-<video controls style="width:100%; max-width: 600px;">
-  <source src="/assets/videos/demo.mp4" type="video/mp4">
+<video controls style="width:100%; max-width:600px;">
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-## More Info
+## Description
 
-You can extend this section with more technical details, diagrams, or links to code.
+This is a full description of the Sample Project. It can include:
+- Technical details
+- Screenshots
+- Links to code
+- Research outcomes
