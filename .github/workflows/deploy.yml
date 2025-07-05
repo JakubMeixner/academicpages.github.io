@@ -5,24 +5,29 @@ on:
     branches:
       - master
 
-permissions:
-  pages: write
-  id-token: write
-
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
+
       - run: gem install bundler
       - run: bundle install
-      - run: JEKYLL_ENV=production bundle exec jekyll build -d _site
+
+      - name: Build the site
+        run: JEKYLL_ENV=production bundle exec jekyll build -d _site
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
       - uses: actions/deploy-pages@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
