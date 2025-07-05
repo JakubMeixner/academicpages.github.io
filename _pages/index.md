@@ -83,7 +83,8 @@ author_profile: false
     
   <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.35); z-index: 1;"></div>
   <div style="position: relative; z-index: 2; padding-top: 3rem; color: white;">
-    <img src="/assets/images/profile.jpg" alt="Jakub Meixner" style="border-radius: 50%; width: 180px; height: 180px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Jakub Meixner" ...>
+
     <h1 style="font-size: 2.5em; font-weight: 600; margin-top: 1rem;">Jakub Meixner</h1>
     <p style="font-size: 1.25em; max-width: 800px; margin: 1rem auto; color: #eee;">
       PhD candidate in Physics & AI<br>
