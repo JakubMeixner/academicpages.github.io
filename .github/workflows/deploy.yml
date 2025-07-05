@@ -11,18 +11,18 @@ jobs:
     permissions:
       pages: write
       id-token: write
+      contents: read
+    environment:
+      name: github-pages
+
     steps:
       - uses: actions/checkout@v4
-
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-
       - run: gem install bundler
       - run: bundle install
-
-      - name: Build the site
-        run: JEKYLL_ENV=production bundle exec jekyll build -d _site
+      - run: JEKYLL_ENV=production bundle exec jekyll build -d _site
 
       - uses: actions/upload-pages-artifact@v3
         with:
